@@ -1,12 +1,7 @@
 "use client";
-
 import Script from "next/script";
 
-export default function GA({
-  GA_MEASUREMENT_ID,
-}: {
-  GA_MEASUREMENT_ID: string;
-}) {
+const GA = ({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }) => {
   return (
     <>
       <Script
@@ -34,4 +29,5 @@ export default function GA({
       />
     </>
   );
-}
+};
+export default GA;

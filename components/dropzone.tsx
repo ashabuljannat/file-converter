@@ -65,7 +65,7 @@ const extensions = {
   audio: ["mp3", "wav", "ogg", "aac", "wma", "flac", "m4a"],
 };
 
-export default function Dropzone() {
+const Dropzone = () => {
   // variables & hooks
   const { toast } = useToast();
   const [is_hover, setIsHover] = useState<boolean>(false);
@@ -451,4 +451,5 @@ export default function Dropzone() {
       )}
     </ReactDropzone>
   );
-}
+};
+export default Dropzone;
